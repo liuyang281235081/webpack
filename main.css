@@ -1,0 +1,6 @@
+#app{
+    text-align: center;
+}
+/*
+    webpack将一切文件看做模块，css文件也不例外，但是webpack只能识别js文件，非JS文件的解析则需要使用loader
+*/
