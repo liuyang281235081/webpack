@@ -1,13 +1,14 @@
 const path = require('path');
 const MiniCssPlugin = require('mini-css-extract-plugin');
 module.exports = {
-    entry:{
-        myname:'./main.js'
-    },
+    entry:'./main.js',
     output: {
-        filename: "[name]_[id]_[chunkhash:8]bundle.js",
-        path:path.resolve(__dirname,'./dist_[hash]'),
+        filename: "bundle.js",
+        path:path.resolve(__dirname,'./dist'),
 
+    },
+    resolve:{
+        modules: ['./mymodules','node_modules']
     },
     module:{
         rules: [
